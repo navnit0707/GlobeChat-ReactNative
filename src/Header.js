@@ -20,10 +20,15 @@ const Header = () => {
         }}>
         GlobeChat
       </Text>
-      <View style={{ position: "absolute", right: 10, top: 10 }}>
-        <Text style={{ color: "#fff", marginRight: 10 }}>Chat</Text>
-
-        <Text style={{ color: "#fff" }}>Logout</Text>
+      <View
+        style={{
+          position: "absolute",
+          right: 10,
+          top: 10,
+          flexDirection: "row",
+          alignItems: "center",
+        }}>
+        <Text style={{ color: "#fff", marginRight: 10 }}>Messages</Text>
       </View>
     </View>
   );

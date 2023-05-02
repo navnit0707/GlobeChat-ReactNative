@@ -1,21 +1,21 @@
 import React from "react";
 import { View } from "react-native";
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
-import Header from "./src/Header";
+import Home from "./src/Home";
 import SignUp from "./src/Signup";
-const CatApp = () => {
+const Stack = createNativeStackNavigator();
+
+const ChatApp = () => {
   return (
-    <View
-      style={{
-        paddingTop: 40,
-        paddingLeft: 10,
-        paddingRight: 10,
-        overflow: "visible",
-      }}>
-      <Header />
-      <SignUp />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen name="Globe Chat" component={Home} />
+        <Stack.Screen name="SignUp" component={SignUp} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 };
 
-export default CatApp;
+export default ChatApp;
