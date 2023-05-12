@@ -25,9 +25,7 @@ const Home = ({ navigation }) => {
               uri: "https://pbs.twimg.com/media/CnX1wcEXEAAOGcM.jpg",
             }}
             style={{ width: 355, height: 400 }}></Image>
-          <Text style={{ padding: 5 }}>
-            Hey! Welcome to GlobeChat {notchHeight}
-          </Text>
+          <Text style={{ padding: 5 }}>Hey! Welcome to GlobeChat</Text>
           <Text style={{ padding: 5, height: 190 }}>
             A place where you can contact with anyone without worrying about
             process like phone varifiactaion or email
