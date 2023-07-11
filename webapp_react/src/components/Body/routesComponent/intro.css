@@ -1,0 +1,73 @@
+span {
+  font-size: large;
+  font-weight: bold;
+}
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+}
+
+.home-image {
+  width: 355px;
+  height: 400px;
+}
+
+.home-text {
+  padding: 5px;
+}
+
+.home-description {
+  padding: 5px;
+}
+
+.login-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  width: 100px;
+  height: 45px;
+  border-radius: 10%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button img,
+.login-button span {
+  flex: 1;
+}
+
+.login-button img {
+  max-width: 100%;
+  height: 30px;
+  margin-right: 5px;
+  justify-content: flex-start;
+}
+
+.login-button:hover {
+  background-color: #45a049;
+}
+
+.login-button:active {
+  background-color: #3e8e41;
+}
+
+.login-button:focus {
+  outline: none;
+}
+
+@media (min-width: 375px) {
+  .home-image {
+    width: 30%;
+    height: 100%;
+  }
+}

@@ -1,5 +1,5 @@
 import Header from "./Header";
-function HeaderSchema() {
+function HeaderSchema({}) {
   return (
     <>
       <Header />

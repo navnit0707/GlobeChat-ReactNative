@@ -1,9 +1,9 @@
-import { Link, Outlet } from "react-router-dom";
-import "./Home.css";
+import React from "react";
+import "./intro.css";
 import login_icon from "../../../assets/login_icon.png";
-function Home() {
+export default function Intro() {
   return (
-    <>
+    <div>
       <div className="home-container">
         <img
           src="https://pbs.twimg.com/media/CnX1wcEXEAAOGcM.jpg"
@@ -25,9 +25,6 @@ function Home() {
           </button>
         </Link>
       </div>
-      <Outlet />
-    </>
+    </div>
   );
 }
-
-export default Home;
